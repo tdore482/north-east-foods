@@ -841,6 +841,7 @@ footer {
     font-weight: 600;
     color: var(--color-primary);
 }
+.sourcing-image-5 { background-image: url('images/Client-Centric.png'); }
 
 /* Responsive */
 @media (max-width: 992px) {
