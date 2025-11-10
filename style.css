@@ -132,7 +132,7 @@ nav.scrolled {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('images/Seeds-Hero.png') no-repeat;
+    background: url('images/Seeds-Hero.webp') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -323,7 +323,7 @@ section.visible {
     background-image: url('images/Beans-in-jar.jpg');
 }
 .quality-image {
-    background-image: url('images/Quality-Control.png');
+    background-image: url('images/Quality-Control.webp');
     order: 2;
 }
 
@@ -829,9 +829,9 @@ footer {
     color: var(--text-color-medium);
 }
 
-.sourcing-image-1 { background-image: url('images/Tailored-Sourcing.jpg'); }
-.sourcing-image-2 { background-image: url('images/Collaborative-Partnership.jpg'); }
-.sourcing-image-4 { background-image: url('images/Logistics-Excellence.jpg'); }
+.sourcing-image-1 { background-image: url('images/Tailored-Sourcing.webp'); }
+.sourcing-image-2 { background-image: url('images/Collaborative-Partnership.webp'); }
+.sourcing-image-4 { background-image: url('images/Logistics-Excellence.webp'); }
 .sourcing-image-3 {
     background: var(--color-background-sourcing-alt);
     display: flex;
@@ -841,7 +841,7 @@ footer {
     font-weight: 600;
     color: var(--color-primary);
 }
-.sourcing-image-5 { background-image: url('images/Client-Centric.png'); }
+.sourcing-image-5 { background-image: url('images/Client-Centric.webp'); }
 
 /* Responsive */
 @media (max-width: 992px) {
