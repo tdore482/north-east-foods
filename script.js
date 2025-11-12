@@ -93,3 +93,44 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set Copyright Year
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
 });
+
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.classList.toggle('modal-open');
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.classList.remove('modal-open');
+            });
+        });
+
+        // Close mobile nav when pressing Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.classList.remove('modal-open');
+            }
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Set Copyright Year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
